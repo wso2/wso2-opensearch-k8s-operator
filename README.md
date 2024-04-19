@@ -1,3 +1,5 @@
+wso2-main branch has been created from v2.5.1 tag in upstream
+
 ![build](https://github.com/opensearch-project/opensearch-k8s-operator/actions/workflows/docker-build.yaml/badge.svg) ![test](https://github.com/opensearch-project/opensearch-k8s-operator/actions/workflows/testing.yaml/badge.svg) ![release](https://img.shields.io/github/v/release/opensearch-project/opensearch-k8s-operator) [![Golang Lint](https://github.com/opensearch-project/opensearch-k8s-operator/actions/workflows/linting.yaml/badge.svg)](https://github.com/opensearch-project/opensearch-k8s-operator/actions/workflows/linting.yaml) [![Artifact Hub](https://img.shields.io/endpoint?url=https://artifacthub.io/badge/repository/opensearch-operator)](https://artifacthub.io/packages/search?repo=opensearch-operator)
 
 # OpenSearch Kubernetes Operator
