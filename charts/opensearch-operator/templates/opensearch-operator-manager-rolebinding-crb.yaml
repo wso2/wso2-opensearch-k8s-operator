@@ -9,4 +9,4 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: {{ include "opensearch-operator.serviceAccountName" . }}
-  namespace: {{ .Release.Namespace }}
+  namespace: {{ include "opensearch-operator.namespace" .}}

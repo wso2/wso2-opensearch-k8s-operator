@@ -60,3 +60,10 @@ Create the name of the service account to use
 {{- default "opensearch-operator-controller-manager" .Values.serviceAccount.name }}
 {{- end }}
 {{- end }}
+
+{{/*
+Define namespace
+*/}}
+{{- define "opensearch-operator.namespace" -}}
+    {{ .Values.namespace | default .Release.Namespace }}
+{{- end -}}

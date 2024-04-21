@@ -4,6 +4,7 @@ metadata:
   labels:
     control-plane: controller-manager
   name: {{ include "opensearch-operator.fullname" . }}-controller-manager
+  namespace: {{ include "opensearch-operator.namespace" .}}
 spec:
   replicas: 1
   selector:
