@@ -9,6 +9,8 @@ manager:
   securityContext:
     allowPrivilegeEscalation: false
   extraEnv: []
+  extraVolumes: []
+  extraVolumeMounts: []
   resources:
     limits:
       cpu: 200m
