@@ -68,7 +68,7 @@ spec:
         {{- end }}
         securityContext:
 {{- toYaml .Values.manager.securityContext | nindent 10 }}
-      volumeMounts:
+        volumeMounts:
 {{- toYaml .Values.manager.extraVolumeMounts | nindent 10 }}
       nodeSelector:
 {{- toYaml .Values.nodeSelector | nindent 8 }}
