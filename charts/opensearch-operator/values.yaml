@@ -65,10 +65,9 @@ manager:
 installCRDs: true
 
 ## Custom field added to this fork
-## If set to "roles", Roles and RoleBindings will be created. If set to "clusterroles", ClusterRoles and 
-## ClusterRoleBindings will be created. Since Roles and RoleBindings are namespaced, use this to restrict access
-## to the namespace where the operator and opensearch-cluster are in
-accessControlMethod: "roles"
+## If this is set to true, RoleBindings will be used to restrict ClusterRoles to the namespace where the operator
+## and OpenSearch cluster are in. If false, ClusterRoleBindings will be used
+useRoleBindings: true
 
 serviceAccount:
   # Specifies whether a service account should be created
