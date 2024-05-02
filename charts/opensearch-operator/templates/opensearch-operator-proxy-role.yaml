@@ -1,8 +1,8 @@
-{{- if eq .Values.accessControlMethod "clusterroles" }}
+{{- if eq .Values.accessControlMethod "roles" }}
 apiVersion: rbac.authorization.k8s.io/v1
-kind: ClusterRole
+kind: Role
 metadata:
-  name: {{ include "opensearch-operator.fullname" . }}-{{ .Release.Namespace }}-proxy-role
+  name: {{ include "opensearch-operator.fullname" . }}-{{ .Release.Namespace }}-proxy
 rules:
 - apiGroups:
   - authentication.k8s.io

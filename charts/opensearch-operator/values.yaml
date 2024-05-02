@@ -64,6 +64,12 @@ manager:
 # Install the Custom Resource Definitions with Helm
 installCRDs: true
 
+## Custom field added to this fork
+## If set to "roles", Roles and RoleBindings will be created. If set to "clusterroles", ClusterRoles and 
+## ClusterRoleBindings will be created. Since Roles and RoleBindings are namespaced, use this to restrict access
+## to the namespace where the operator and opensearch-cluster are in
+accessControlMethod: "roles"
+
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
