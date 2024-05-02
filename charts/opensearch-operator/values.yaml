@@ -64,6 +64,11 @@ manager:
 # Install the Custom Resource Definitions with Helm
 installCRDs: true
 
+## Custom field added to this fork
+## If this is set to true, RoleBindings will be used to restrict ClusterRoles to the namespace where the operator
+## and OpenSearch cluster are in. If false, ClusterRoleBindings will be used
+useRoleBindings: true
+
 serviceAccount:
   # Specifies whether a service account should be created
   create: true
